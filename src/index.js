@@ -1,4 +1,5 @@
-import React, {useEffect,useState} from 'react';
+// import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './index.css';
 import {request,unSubRequest} from './request';
 import {clone} from './clone';
@@ -9,7 +10,7 @@ let EnvironmentEnum = {
   Local:"Local",
 }
 
-const DawicoinReactSdk = ({env,sandbox,storeUid,priceUid,euid,callback}) => {
+const DawicoinButton = ({env,sandbox,storeUid,priceUid,euid,callback}) => {
   env = (env && env in EnvironmentEnum)?env:EnvironmentEnum.Production
   sandbox = sandbox?true:false;
   storeUid = storeUid?storeUid:"";
@@ -217,4 +218,4 @@ const DawicoinReactSdk = ({env,sandbox,storeUid,priceUid,euid,callback}) => {
 
 };
 
-export default DawicoinReactSdk;
+export default DawicoinButton;

@@ -1,6 +1,6 @@
 {
   "name": "dawicoin-react-sdk",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "dawicoin-react-sdk",
   "main": "./build/index.js",
   "scripts": {

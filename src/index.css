@@ -1,0 +1,157 @@
+
+
+.dawicoin-react-sdk-comp{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box; 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box; 
+  -webkit-overflow-scrolling: touch;
+}
+
+.dawicoin-react-sdk-comp .dawicoin-icon{
+  height: 48px;
+  width: 48px;
+}
+.dawicoin-react-sdk-comp .dawicoin-icon svg{
+  background-color: #FFF;
+  height: inherit;
+  width: inherit;
+}
+.dawicoin-react-sdk-comp .dawicoin-icon svg .bg-path{
+  fill: rgb(176,39,1);
+}
+.dawicoin-react-sdk-comp .dawicoin-payment-button-container{
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  max-width: 320px;
+  cursor: pointer;
+}
+.dawicoin-react-sdk-comp .dawicoin-payment-button{
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(176,39,1);
+}
+.dawicoin-react-sdk-comp .dawicoin-payment-button .dawicoin-text{
+  padding: 8px 20px 0 8px;
+  display: flex;
+  flex-flow: column;
+  color: #FFF;
+}
+.dawicoin-react-sdk-comp .dawicoin-payment-button .dawicoin-text > div{
+  font-size: 18px;
+}
+.dawicoin-react-sdk-comp .dawicoin-payment-button .dawicoin-text > span{
+  line-height: 11px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.dawicoin-react-sdk-comp .dawicoin-accepted-coins{
+  padding: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.dawicoin-react-sdk-comp .dawicoin-accepted-coins img{
+  position: relative;
+  z-index: 40;
+  margin-left: -6px;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,.5);
+}
+.dawicoin-react-sdk-comp .dawicoin-powered-by{
+  margin: 4px 0 0 0;
+  text-align: center;
+  line-height: 10px;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#dawicoin-gray-screen-div{
+  position: fixed;
+  z-index: 10000;
+  top: 0px; left: 0px;
+  height: 100vh; width: 100vw;
+  background-color: rgba(0,0,0,.8);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+#dawicoin-gray-screen-div.hide{
+  display: none;
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-inner{
+  text-align:center;
+  max-width: 280px;
+  color: #FFF;
+  cursor: pointer;
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-inner p:last-of-type{
+  text-decoration: underline;
+}
+#dawicoin-gray-screen-div .dawicoin-gray-screen-logo{
+  margin: 0 0 32px;
+  display: flex;
+  justify-content:center;
+}
+#dawicoin-gray-screen-div .dawicoin-gray-screen-logo > img{
+  height: 60px;
+  width: 60px;
+}
+#dawicoin-gray-screen-div .dawicoin-gray-screen-logo > div{
+  font-size: 28px;
+  line-height: 60px;
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-close{
+  position: absolute;
+  top: 20px; right: 20px;
+  height: 80px; width: 80px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-close:hover{
+  background-color: rgba(255,255,255,.15);
+  box-shadow: 0 0 1px 1px rgba(255,255,255,.3);
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-close:active{
+  background-color: rgba(255,255,255,.3);
+  box-shadow: 0 0 1px 1px rgba(255,255,255,.6);
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-close::before{
+  display: block;
+  position: absolute;
+  content:"";
+  top: 10px; right: calc(40px - 4px);
+  height: 60px; width: 8px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+}
+#dawicoin-gray-screen-div #dawicoin-gray-screen-div-close::after{
+  display: block;
+  position: absolute;
+  content:"";
+  top: 10px; right: calc(40px - 4px);
+  height: 60px; width: 8px;
+  background-color: #FFF;
+  transform: rotate(-45deg);
+}

@@ -1,6 +1,6 @@
 {
   "name": "dawicoin-react-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dawicoin-react-sdk",
   "main": "./build/index.js",
   "scripts": {
@@ -20,7 +20,10 @@
   },
   "dependencies": {
     "@material/react-button": "^0.15.0",
-    "node-sass": "^7.0.1",
     "react": "^16.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawicoin/dawicoin-react-sdk"
   }
 }
